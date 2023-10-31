@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="baseline-https">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="javascript:history.back()" class="gobk">←Go Back</a>
+    <h1 class="h1n">uz.app</h1>
+    <div class="divap">
+        <div style="display: flex;">
+        <img src="./1684229427_stick-war-legacy.png" alt="" class="img1">
+        <div>
+        <p>name: Stick War: Legacy</p>
+        <p>android: 5.0+</p>
+        <p>tocken: mod </p>
+        <p>language: englsh</p>
+        </div>
+ 
+        </div>
+        <div>
+            <a class="a"  href='./Stick_War_Legacy.uz.app.apk'>
+                <samp>yuklash</samp></a>
+        </div>
+       
+
+    </div>
+    <div class="body">
+        <div class="container">
+            <div class="box">
+                <!-- <span style="--r:1;"><img src="./sticvar.1.webp"></span> -->
+                <span style="--r:8;"><img src="./sticvar.2.webp"></span>
+                <span style="--r:9;"><img src="./sticvar3.webp"></span>
+                <!-- <span style="--r:4;"><img src="./sticvar.1.webp"></span> -->
+                <!-- <span style="--r:5;"><img src="./sticvar.1.webp"></span> -->
+                <!-- <span style="--r:6;"><img src="./sticvar.1.webp"></span> -->
+                <!-- <span style="--r:7;"><img src="./sticvar.1.webp"></span> -->
+                <span style="--r:7;"><img src="./sticvar.1.webp"></span> 
+            </div>
+            <div class="btns">
+                <div class="btn prev"></div>
+                <div class="btn next"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        let prev = document.querySelector('.prev')
+            let box = document.querySelector('.box')
+            let next = document.querySelector('.next')
+
+            let degres = 0;
+            prev.addEventListener('click', function() {
+                degres += 45
+                box.style = `transform: perspective(1000px) rotateY(${degres}deg);`
+            })
+            next.addEventListener('click', function() {
+                degres -= 45
+                box.style = `transform: perspective(1000px) rotateY(${degres}deg);`
+            })
+        
+    </script>
+    <hr>
+    <input type="text" class="input_legty">
+</body>
+</html>
